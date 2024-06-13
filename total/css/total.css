@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    margin: 0;
+    /* font-family: "Noto Sans KR", sans-serif; */
+    font-family: "Playfair Display", serif;
+    /* font-family: "Archivo Black", sans-serif; */
+}
+.contents_area {
+    width: 100%;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 0 auto;
+
+    height: 100%;
+    position: relative;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+*{margin:0;padding:0;}
+.typing {
+    font-size:40px;
+    line-height: 50px;}
+
+.typing:after {
+    display:inline-block;
+    margin-left:2px;
+    vertical-align:middle;
+    content:'';
+    background:#000;
+    width:5px;
+    height:30px;
+    animation:blink infinite 1s ease;}
+
+@keyframes blink {
+  0%  {opacity:0;}
+  100%  {opacity:1;}
+}
+
+
+
+
+
+/* 메인배너 시작 */
+.mainbenner_area{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.mb_left{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.mb_imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.mb_imgbox>img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mb_textbox{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.mb_right{
+    width: 130px;
+    height: 270px;
+    position: fixed;
+    right: 4.0%;
+    top: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    z-index: 99;
+}
+
+.mb_nav{
+    margin-left: 5px;
+}
+
+.nav_menu{
+    padding-top: 13px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #222;
+}
+
+.nav_active{
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+
+/* 어바웃미 */
+.about{
+    width:100%;
+    height: 100vh;
+    background-color: #d3d3d3;
+    position: relative;
+}
+.about_area{
+    width: 80%;
+    height: 90%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about_title{
+    font-size: 35px;
+    font-weight: 700;
+    height: 70px;
+    line-height: 70px;
+}
+
+.about_bot{
+    display: flex;
+    gap: 40px;
+    height: calc(100% - 70px);
+}
+.about_left{
+    width: calc(23% - 20px);
+    height: 0;
+
+    padding-bottom:  28.417%;
+    border: 3px solid #fff ;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+.about_left>img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.about_right{
+    width: calc(65% - 20px);
+    /* height: 800px; */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.profile_title{
+font-size: 30px;
+font-family: 900;
+}
+.history_title{
+    font-size: 30px;
+    font-family: 900;
+    margin-top: 20px;
+}
+.profile_desc{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.profile_desc>div{
+    margin-top: 5px;
+}
+.history_desc{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.desc_title2,.desc_title1{
+    margin-top: 10px;
+}
+
+.cerificate_title{
+    font-size: 30px;
+    font-family: 900;
+    margin-top: 20px;
+}
+.cerificate_desc{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* 스킬 */
+.skil{
+    width:100%;
+    height: 100vh;
+    background-color: #d3d3d3;
+    position: relative;
+}
+.skil_area{
+    width: 75%;
+    height: 80%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.skil_top{
+    font-size: 35px;
+    font-weight: 700;
+    height: 70px;
+    line-height: 70px;
+}
+.skil_bot{
+    width: 100%;
+    height: calc(100% - 70px);
+    max-height: 750px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skil_box{
+    width: 50%;
+    
+}
+.skil_imgbox{
+    height: 100px;
+    position: relative;
+}
+.skil_imgbox>img{
+    height: 100%;
+}
+.skil_imgbox>div{
+    position: absolute;
+    right: 110px;
+    top: 65px;
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+
+}
+
+
+.skil_gaugebox{
+    width: calc(100% - 100px);
+    height: 30px;
+    background-color: #000;
+    margin: 5px 0 ;
+}
+
+.gauge{
+    width: 0;
+    height: 100%;
+    background-color: orange;
+    transition: all 1.5s;
+}
+
+
+
+/* 포트폴리오 */
+.portfolio{
+    width:100%;
+    height: 100vh;
+    background-color: #d3d3d3;
+    position: relative;
+}
+.pf_title{
+    font-size: 35px;
+    font-weight: 700;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+}
+.pf_area{
+    width: 75%;
+    height: 80%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.pf_left{
+    width: calc(50% - 20px);
+    font-family: "Noto Sans KR", sans-serif;
+}
+.pf_right{
+    width: calc(50% - 20px);
+}
+.pf_name{
+    font-size: 30px;
+}
+.pf_type{
+    margin-top: 10px;
+}
+.pf_skil{
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.pf_box{
+    width: 75px;
+    height: 70px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    line-height: 70px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pf_box1:hover{
+    background-color: orange;
+    color: #fff;
+}
+
+.pf_box2:hover{
+    background-color: brown;
+    color: #fff;
+}
+.pf_box3:hover{
+    background-color: skyblue;
+    color: #fff;
+}
+
+
+.pf_contribution{
+    margin-top: 40px;
+}
+.contents{
+    margin-top: 20px;
+}
+.pf_link{
+    margin-top: 40px;
+    text-align: center;
+    line-height: 40px;
+    width: 130px;
+    height: 40px;
+    background-color: orange;
+    color: #fff;
+}
+.pf_link2{
+    background-color: brown;
+}
+.pf_link3{
+    background-color: skyblue;
+}
+
+.pf_link1>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pf_link2>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pf_link3>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.pf_img{
+    width: 100%;
+}
+.pf_img>img{
+    width: 100%;
+}
+
+/* 컨텍트 */
+.contact{
+    width:100%;
+    height: 100vh;
+    background-color: #d3d3d3;
+    position: relative;
+}
+.contact_area{
+    width: 75%;
+    height: 80%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.contact_title{
+    font-size: 35px;
+    font-weight: 700;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+}
+.contact_bot{
+    width: 100%;
+    height: calc(100% - 75px);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.contact_box{
+    width: 250px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.contact_imgbox{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+.contact_imgbox img{
+    height: 100%;
+}
+
+.contact_imgbox1 img{
+    transform: translateX(-19.5%)scale(0.5);
+}
+.contact_imgbox2 img{
+    transform: translateX(-15%)scale(0.8);
+}
+.contact_imgbox3 img{
+    transform:scale(0.9);
+}
+.contact_textbox{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.contact_textbox2>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
