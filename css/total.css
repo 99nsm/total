@@ -146,6 +146,7 @@ a {
     display: flex;
     gap: 40px;
     height: calc(100% - 70px);
+    overflow: hidden;
 }
 .about_left{
     width: calc(23% - 20px);
@@ -491,3 +492,9 @@ font-family: 900;
     height: 100%;
 }
 
+
+@media screen and (max-width: 1350px) {
+    .pf_right{
+        width: 50%
+    }
+}
