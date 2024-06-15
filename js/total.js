@@ -60,7 +60,18 @@ $(document).ready(function(){
         }
     })
 
-    for(let i=1; i<=sec_length; i++)
+    $(window).scroll(function(){
+        for(let i=2; i<=sec_length; i++){
+            if($(window).scrollTop()>=$(`.sec${i-1}`).offset().top){
+                $(`.sec${i}`).css({
+                    transform: 'translateY(0)',
+                    opacity: '1'
+                })
+            }
+        }
+    })
+
+    for(let i=1 ; i<=sec_length; i++)
         $(`.nav_menu${i}`).click(function(){
         $('html, body').animate({
             scrollTop: `${$(`.sec${i}`).offset().top}`
