@@ -105,6 +105,12 @@ $(document).ready(function(){
                     $('.gauge8').css({
                         width:'80%'
                     })
+                    $('.gauge9').css({
+                        width:'90%'
+                    })
+                    $('.gauge10').css({
+                        width:'80%'
+                    })
                 }
         })
 
