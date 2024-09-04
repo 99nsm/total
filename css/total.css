@@ -91,7 +91,7 @@ a {
 
 .mb_right{
     width: 130px;
-    height: 300px;
+    height: 340px;
     position: fixed;
     right: 4.0%;
     top: 60%;
@@ -376,6 +376,10 @@ font-family: 900;
     background-color: skyblue;
     color: #fff;
 }
+.pf_box5:hover{
+    background-color: rgb(75, 75, 75);
+    color: #fff;
+}
 
 
 .pf_contribution{
@@ -407,6 +411,9 @@ font-family: 900;
 }
 .pf_link3{
     background-color: skyblue;
+}
+.pf_link5{
+    background-color: rgb(75, 75, 75);
 }
 
 .pf_link>a{
@@ -458,9 +465,10 @@ font-family: 900;
     width: 100%;
     height: calc(100% - 75px);
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-around;
+    /* gap: 60px; */
     margin-top: 50px;
+    overflow: auto;
 }
 
 .contact_box{
