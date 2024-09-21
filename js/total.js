@@ -80,7 +80,7 @@ $(document).ready(function(){
     
         
         $(window).scroll(function(){
-                if($(window).scrollTop()>=$(`.sec3`).offset().top){
+                if($(window).scrollTop()>=$(`.sec3`).offset().top-200){
                     $('.gauge1').css({
                         width:'80%'
                     })
