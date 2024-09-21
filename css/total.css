@@ -83,7 +83,7 @@ a {
     height: 200px;
     position: fixed;
     right: 2%;
-    top: 78%;
+    top: 80%;
     /* background-color: rgba(0, 0, 0, 0.1); */
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 7px;
@@ -662,7 +662,10 @@ a {
         width: 80%;
         padding: 10px;
     }
-    
+    .mb_right {
+        right: 1%;
+        top: 70%;
+    }
 
 }
 
