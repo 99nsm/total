@@ -343,6 +343,7 @@ a {
 }
 .pf_skil{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin-top: 40px;
 }
@@ -671,12 +672,15 @@ a {
     .pf_skil {
         gap: 5px;
     }
+    .pf_bot {
+        padding: 10px;
+    }
     
-        /* 컨택트 */
-        .contact_bot{
-            width: 100%;
-            padding: 5px;
-        }
+    /* 컨택트 */
+    .contact_bot{
+        width: 100%;
+        padding: 5px;
+    }
     
     }
 
