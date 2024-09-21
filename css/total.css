@@ -667,6 +667,12 @@ a {
 }
 
 @media screen and (max-width: 400px) {
+    /* 메인배너 */
+
+    .typing {
+        font-size: 50px;
+    }
+    
     /* 포트폴리오 */
 
     .pf_skil {
