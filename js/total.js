@@ -110,7 +110,6 @@ $(document).ready(function(){
                     })
                     $('.gauge10').css({
                         width:'80%'
-
                     })
                 }
         })
